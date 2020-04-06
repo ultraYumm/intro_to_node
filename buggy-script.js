@@ -1,11 +1,12 @@
-const debug = require('debug'); // require local dependency
-debug.enable('*'); // enable all (*) namespaces
+//const debug = require('debug'); // require local dependency
+//debug.enable('*'); // enable all (*) namespaces
 
 const fs = require('fs');
 const path = require('path');
 
 const source = process.argv[2];
 const target = process.argv[3];
+//console.log(source)
 
 // read contents of source
 const contentsOfSource = fs.readFileSync(source, 'utf-8');
@@ -28,7 +29,8 @@ linesInSource.forEach(line => {
   // write the file and it's contents
   fs.writeFileSync(
     newFilePath,
-    contentArr.join(' '),
+    contentArr,
+    //contentArr.join(' '),
     { flag: 'w+', encoding: 'utf-8' }
   );
 });

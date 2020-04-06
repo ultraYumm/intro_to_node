@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],*/
             "program": "${workspaceFolder}/buggy-script.js",
-            "args": ["source", "target"] /* put the arguments here in separate string elements! */
+            "args": [ "./project-outline.txt", "./my-project"] /* put the arguments here in separate string elements! */
         }
     ]
 }
